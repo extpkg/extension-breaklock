@@ -2,7 +2,7 @@ import { applyI18n } from "./i18n.mjs";
 import fs from "fs";
 import { promisify } from "util";
 import { join } from "path";
-import { buildFolder, rootFolder } from "./paths.mjs";
+import { buildFolder, rootFolder, targetFolder } from "./paths.mjs";
 import { getL10nData } from "./i18n.mjs";
 import { productionCompiler, developmentCompiler } from "./webpackCompiler.mjs";
 import fsExtra from "fs-extra";
@@ -13,7 +13,7 @@ const readFile = promisify(fs.readFile);
 const writeFile = promisify(fs.writeFile);
 const cp    = fsExtra.copy;
 
-const devMode = process.env.NODE_ENV;
+const devMode = process.env.NODE_ENV === 'development' ? true : false;
 
 const handleRelativeCopy = async (from, to) => {
   const text = (await readFile(from)).toString();
@@ -28,7 +28,7 @@ const build = async () => {
   await mkdir(buildFolder);
   console.log('Webpacking...');
   await new Promise((res)=> {
-    const compiler = devMode === 'development' ? developmentCompiler : productionCompiler;
+    const compiler = devMode ? developmentCompiler : productionCompiler;
     compiler.run((err, stats) => {
       if (err || stats.hasErrors()) {
         console.log(stats.toString({ colors: true }));
@@ -70,6 +70,15 @@ const build = async () => {
     handleRelativeCopy(join(buildFolder, 'en', 'index.html'), join(buildFolder, 'index.html')),
     handleRelativeCopy(join(buildFolder, 'en', 'app.js'), join(buildFolder, 'app.js')),
   ]);
+
+  if (!devMode) {
+    console.log('Copying files to dist/target...');
+    if (!fs.existsSync(targetFolder)){
+      await mkdir(targetFolder);
+    }
+
+    await cp(buildFolder, targetFolder, {recursive: true});
+  }
   console.log('Finished successfully.');
 };
 
