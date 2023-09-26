@@ -1,5 +1,4 @@
 airport_charlist: абвгдеёжзийклмнопрстуфхцчшщъыьэюя0123456789 _*%!?#/\\|@
-attribution: от <a href="https://twitter.com/mxwllt"><svg class="icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-maxwellito"></use></svg></a> / на <a href="https://github.com/maxwellito/breaklock"><svg class="icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-github"></use></svg></a>
 button_abort: ОТМЕНА
 button_easy: ЛЕГКИЙ
 button_hard: СЛОЖНЫЙ
@@ -25,19 +24,19 @@ mode_challenge_description: Режим испытания дает вам тол
 mode_countdown: Отсчет времени
 mode_countdown_description: Решите игру за одну минуту, без ограничения попыток
 mode_practice: Практика
-mode_practice_description: Никакого давления, просто исследуйте игру и практикуйтесь.
+mode_practice_description: Никакого давления, просто играйте и практикуйтесь.
 name_app: BreakLock
-quote_success00: Это было чистое везение, ничего более. Прекратите мечтать.
-quote_success01: Вам повезло, не пришлось не спать всю ночь.
-quote_success02: Нет заслуги. Совершенно никакой.
-quote_success03: Это было дано на золотой тарелке.
+quote_success00: Это было чистое везение, ничего более. Даже не мечтайте.
+quote_success01: Вам повезло, не пришлось угадывать всю ночь.
+quote_success02: Это не ваша заслуга. Совершенно.
+quote_success03: Поданно на золотом блюдечке.
 quote_success04: Во время этой игры не было задействовано ни одной синаптической связи.
-quote_success05: Не смейте даже твитнуть свой результат.
+quote_success05: Можете собой гордиться!
 quote_success06: Саперлипопет! Было очень близко.
-quote_success07: Кажется, это честный результат, но с небольшой долей удачи.
+quote_success07: Кажется, это честный результат, но не без удачи.
 quote_success08: Очень хорошо!
-quote_success09: Но Вы справились!
-quote_success10: Пробовать случайные комбинации - это не стратегия...
+quote_success09: Ух, на грани.. Но Вы справились!
+quote_success10: Пробовать случайные комбинации - не вариант...
 quote_success11: Это было доооолго.
 quote_success12: По крайней мере, Вы справились!
 quote_success13: Вы, вероятно, уже ненавидите эту игру.
@@ -58,5 +57,3 @@ summary_see: Пожалуйста, выберите опцию.
 summary_action_solution: РЕШЕНИЕ
 summary_action_new_game: НОВАЯ_ИГРА
 summary_action_back_home: НАЗАД_НА_ГЛАВНУЮ
-tweet_feedback: Твитните мне свой отзыв по игре.
-share: делиться

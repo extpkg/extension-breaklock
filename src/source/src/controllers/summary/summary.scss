@@ -55,16 +55,6 @@ $summary_transition_delay:    .5s;
   font-size: 1.5rem;
 }
 
-.summary-share {
-  font-size: 2rem;
-  line-height: 0;
-
-  &-link {
-    display: inline-block;
-    margin-right: .375em;
-  }
-}
-
 @media (orientation: landscape), (min-width: $mq-xlarge-min) {
   .summary {
     align-items: center;

@@ -2,7 +2,6 @@ import summaryFeedback from './summaryFeedback'
 import config from '../../config'
 import dom from '../../utils/dom'
 import airportText from '../../utils/airportText'
-import share from '../../utils/share'
 
 require('./summary.scss');
 
@@ -52,30 +51,14 @@ class SummaryCtrl {
       this.actionButtons.push(btn)
     }
 
-    // Social links
-    this.shareBtn = dom.create('button', {
-      class: 'summary-action-button'
-    }, [
-      dom.create('p', {}, '#@share')
-    ])
-
-    // Feedback stuff
-    let feedbackEl = dom.create('div', 'summary-feedback bloc', [
-      dom.create('p', {}, [
-        dom.create('span', {}, '#@tweet_feedback '),
-        dom.create('a', {href: config.SOCIAL.PLATFORMS.TWITTER.URL('', '@mxwllt', ['breaklock'])}, '@mxwllt')
-      ])
-    ])
-
     this.titleEl   = dom.create('h1',  'summary-title highlight')
     this.detailsEl = dom.create('p',   'summary-details')
     this.revealEl  = dom.create('p',   'summary-reveal', '#@summary_see')
     this.actionsEl = dom.create('div', 'summary-actions bloc', this.actionButtons)
-    this.socialEl  = dom.create('div', 'summary-share bloc',   [this.shareBtn])
 
     this.el = dom.create('div', 'summary view', [
       dom.create('div', 'view-bloc', [this.titleEl, this.detailsEl, this.revealEl]),
-      dom.create('div', 'view-bloc', [this.actionsEl, this.socialEl, feedbackEl])
+      dom.create('div', 'view-bloc', [this.actionsEl])
     ])
 
     return this.el
@@ -86,7 +69,6 @@ class SummaryCtrl {
    */
   init () {
     this.actionButtons.forEach(btn => btn.addEventListener('click', this.triggerAction.bind(this)));
-    this.shareBtn.addEventListener('click', () => share(config.SOCIAL.MESSAGE, config.URL));
   }
 
   /**

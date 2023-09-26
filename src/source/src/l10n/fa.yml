@@ -1,5 +1,4 @@
 airport_charlist: ابپتثجچحخدذرضسشصضطظعغفقکلمنوهی
-attribution: توسط <a href="https://twitter.com/mxwllt"><svg class="icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-maxwellito"></use></svg></a> / روی <a href="https://github.com/maxwellito/breaklock"><svg class="icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-github"></use></svg></a><br>ترجمه توسط <a href="https://hkalbasi.github.io/">حمیدرضا کلباسی</a>
 button_abort: خروج
 button_easy: آسان
 button_hard: سخت
@@ -32,7 +31,7 @@ quote_success01: خوش شانس بودی.
 quote_success02: لیاقتشو نداشتی. اصلا نداشتی.
 quote_success03: کاپ طلایی تقدیم به شما.
 quote_success04: قطعا هیچ سیناپسی در این بازی استفاده نشد.
-quote_success05: امتیازتو توییت کن.
+quote_success05: شما می توانید به خود افتخار کنید!
 quote_success06: نزدیک بود.
 quote_success07: منطقی به نظر می رسه، با کمی شانس.
 quote_success08: احسنت!
@@ -58,5 +57,3 @@ summary_see: لطفا یک گزینه را انتخاب کنید.
 summary_action_solution: راه حل
 summary_action_new_game: بازی جدید
 summary_action_back_home: بازگشت به خانه
-tweet_feedback: بازخوردت رو توییت کن برای
-share: اشتراک گذاری

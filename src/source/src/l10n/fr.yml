@@ -1,5 +1,4 @@
 airport_charlist: abcdefghijklmnopqrstuvwxyz0123456789 _*%!?#/\\|@
-attribution: par <a href="https://twitter.com/mxwllt"><svg class="icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-maxwellito"></use></svg></a> / sur <a href="https://github.com/maxwellito/breaklock"><svg class="icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-github"></use></svg></a>
 button_abort: RETOUR
 button_easy: Facile
 button_hard: Difficile
@@ -32,7 +31,7 @@ quote_success01: Vous avez êtes chanceux.
 quote_success02: Aucun mérite. Absolument aucun.
 quote_success03: C’était offert sur un plateau d’argent.
 quote_success04: Absolument aucune synapse n'a été utilisé durant cette partie.
-quote_success05: N’osez meme pas tweeter votre score.
+quote_success05: Vous devriez être fier de vous!
 quote_success06: Damn son!! C’était limite.
 quote_success07: Semble légitime, avec un peu de chance.
 quote_success08: Pas mal!
@@ -58,5 +57,3 @@ summary_see: Sélectionnez une option
 summary_action_solution: SOLUTION
 summary_action_new_game: NOUVELLE_PARTIE
 summary_action_back_home: RETOUR_ACCUEIL
-tweet_feedback: Tweetez moi votre retour d’expérience à
-share: Partager

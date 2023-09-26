@@ -3,9 +3,10 @@
   "version": "0.1.0",
   "description": "Game to guess pattern locks",
   "scripts": {
-    "build": "node ./src/source/src/scripts/build.mjs",
-    "watch": "npm run build; wr 'npm run build' ./src/",
-    "liveserver": "live-server ./build",
+    "build": "NODE_ENV=production node ./src/source/src/scripts/build.mjs",
+    "build-nominify": "NODE_ENV=development node ./src/source/src/scripts/build.mjs",
+    "watch": "npm run build-nominify; wr 'npm run build-nominify' ./src/source/",
+    "liveserver": "live-server ./src/source/build",
     "start": "npm run watch & npm run liveserver"
   },
   "author": "EXT Inc.",

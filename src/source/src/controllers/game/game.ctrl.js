@@ -9,6 +9,8 @@ import dom           from '../../utils/dom'
 import color         from '../../utils/color'
 import {pluralize}   from '../../utils/pluralize'
 
+const devMode = process.env.NODE_ENV === 'development' ? true : false;
+
 require('./game.scss');
 
 /**
@@ -100,7 +102,11 @@ class GameCtrl {
     let match      = this.pattern.compare(pattern),
         svgPattern = this.buildPatternSVG(pattern, match),
         isUnlocked = (match[0] === this.pattern.dotLength)
-
+    
+    if (devMode) {
+      console.log('Pattern ' + pattern.suite + ' This pattern: ' + this.pattern.suite)
+    }
+    
     this.count++
 
     if (this.isEnded) {

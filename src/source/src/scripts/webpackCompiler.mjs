@@ -53,4 +53,5 @@ export const productionCompiler = webpack({
 export const developmentCompiler = webpack({
   ...config,
   mode: 'development',
+  devtool: 'source-map',
 });

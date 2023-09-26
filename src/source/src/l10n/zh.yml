@@ -1,5 +1,4 @@
 airport_charlist: abcdefghijklmnopqrstuvwxyz0123456789 _*%!?#/\\|@
-attribution: 作者 <a href="https://twitter.com/mxwllt"><svg class="icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-maxwellito"></use></svg></a> / Github仓库 <a href="https://github.com/maxwellito/breaklock"><svg class="icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-github"></use></svg></a>
 button_abort: 放弃
 button_easy: 简单
 button_hard: 困难
@@ -32,7 +31,7 @@ quote_success01: 你很幸运，没有熬夜。
 quote_success02: 没有价值，绝对没有。
 quote_success03: 那是用金盘子装着的。
 quote_success04: 刚那局游戏绝对没经过大脑。
-quote_success05: 甚至不敢公布你的成绩。
+quote_success05: 你可以为自己感到骄傲！
 quote_success06: 卧槽！差一点。
 quote_success07: 似乎不错，有点运气。
 quote_success08: 很好！
@@ -58,5 +57,3 @@ summary_see: 请选择一个选项。
 summary_action_solution: 解决方案
 summary_action_new_game: 新游戏
 summary_action_back_home: 返回
-tweet_feedback: 反馈
-share: 分享
