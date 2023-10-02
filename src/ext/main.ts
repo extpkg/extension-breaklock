@@ -33,7 +33,10 @@ ext.runtime.onExtensionClick.addListener(async () => {
       icon: 'icons/icon-128.png',
       fullscreenable: true,
       vibrancy: false,
-      frame: true,
+      frame: false,
+      titleBarStyle: 'inset',
+      minWidth: 400,
+      minHeight: 550
     })
 
     // Check if persistent permission is granted

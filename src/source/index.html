@@ -51,6 +51,16 @@
 
     <link rel="stylesheet" type="text/css" href="./app.css" />
     #@special_css
+    <style>
+      #drag-header {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 30px;
+        width: 100%;
+        -webkit-app-region: drag;
+      }
+    </style>
   </head>
 
   <body>
@@ -85,6 +95,8 @@
         }
       </style>
     </p>
+
+    <div id="drag-header"></div>
 
     <!-- Static content -->
     <div style="display: none">
