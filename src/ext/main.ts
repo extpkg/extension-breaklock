@@ -1,4 +1,4 @@
-// Evil Glitch EXT extension
+// Breaklock EXT extension
 
 // Global resources
 let created = false
@@ -35,6 +35,8 @@ ext.runtime.onExtensionClick.addListener(async () => {
       vibrancy: false,
       frame: false,
       titleBarStyle: 'inset',
+      width: 930,
+      height: 550,
       minWidth: 400,
       minHeight: 550
     })
