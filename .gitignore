@@ -1,15 +1,5 @@
-# Logs
-logs
-*.log
-npm-debug.log*
-
-# Dependency directories
-node_modules/
-
-# Optional npm cache directory
-.npm
-
+/node_modules
+/dist
 .DS_Store
-src/source/build/
-
-dist/
+*.pem
+*.ext
