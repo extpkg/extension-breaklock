@@ -10,9 +10,9 @@ import {
   updateManifestWithPackageVersions,
 } from "./utils.mjs";
 import { appBuildOptions, extBuildOptions } from "./esbuild.config.mjs";
+import { localize } from "./i18n.mjs";
 
 export const build = async () => {
-  clean();
   await clean();
   const isTypeCheckOk = await typeCheck();
   if (!isTypeCheckOk) process.exit(1);
@@ -21,6 +21,7 @@ export const build = async () => {
   await esbuild.build(extBuildOptions);
 
   await copyAssets();
+  await localize();
   await updateManifestWithPackageVersions();
 };
 

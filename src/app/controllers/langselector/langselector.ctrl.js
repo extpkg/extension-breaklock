@@ -34,8 +34,8 @@ class LangSelector {
         "a",
         {
           href: window.location.href.replace(
-            /dist(\/[a-z]{2})?(?=\/index\.html|$)/,
-            `dist/${choice.value}`,
+            /(?:\/[a-z]{2})?(\/index\.html)$/,
+            `/${choice.value}$1`,
           ),
         },
         choice.label,
