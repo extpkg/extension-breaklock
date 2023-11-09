@@ -47,9 +47,9 @@ ext.runtime.onExtensionClick.addListener(async () => {
       mutable: true,
     });
 
-    const aspectRatio = 1024 / 688;
-    const width = 960;
-    const height = width / aspectRatio;
+    const width = 1024;
+    const height = 688;
+    const aspectRatio = width / height;
     const minWidth = 800;
     const minHeight = minWidth / aspectRatio;
 
@@ -65,6 +65,7 @@ ext.runtime.onExtensionClick.addListener(async () => {
       height,
       minWidth,
       minHeight,
+      aspectRatio,
     });
 
     const contentSize = await ext.windows.getContentSize(window.id);
