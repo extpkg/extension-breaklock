@@ -13,3 +13,6 @@ A game you gonna love to hate.
 
 Run `npm run dev` to watch `src` and `public` directories and rebuild the
 project on changes
+
+## Source
+https://github.com/maxwellito/breaklock
